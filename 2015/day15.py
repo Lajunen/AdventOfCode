@@ -119,5 +119,3 @@ class ingredient:
     flavor = 0
     texture = 0
     calories = 0
-
-day15(2)
