@@ -20,43 +20,30 @@ def locate_house(target, value, limit, start, step):
         
         if sum >= target:
             if step == 100000:
-                print("first house found at " + str(house) + "(" + str(sum) + ")")
                 step = 50000
                 start = int(house/2)
                 house = start - step
-                print("continue from " + str(house) + " with step " + str(step))
             elif step == 50000:
-                print("second house found at " + str(house) + "(" + str(sum) + ")")
                 step = 10000
                 start = int((house+start)/2)
                 house = start - step
-                print("continue from " + str(house) + " with step " + str(step))
             elif step == 10000:
-                print("third house found at " + str(house) + "(" + str(sum) + ")")
                 step = 1000
                 start += int((house-start)/5)
                 house = start - step
-                print("continue from " + str(house) + " with step " + str(step))
             elif step == 1000:
-                print("fourth house found at " + str(house) + "(" + str(sum) + ")")
                 step = 100
                 start += int((house-start)/5)
                 house = start - step
-                print("continue from " + str(house) + " with step " + str(step))
             elif step == 100:
-                print("fifth house found at " + str(house) + "(" + str(sum) + ")")
                 step = 10
                 start += int((house-start)/5)
                 house = start - step
-                print("continue from " + str(house) + " with step " + str(step))
             elif step == 10:
-                print("sixth house found at " + str(house) + "(" + str(sum) + ")")
                 step = 1
                 start += int((house-start)/5)
                 house = start - step
-                print("continue from " + str(house) + " with step " + str(step))
             elif step == 1:
-                print("last house found at " + str(house) + "(" + str(sum) + ")")
                 break
 
         house += step
@@ -91,5 +78,3 @@ def first_house_to(target, presents_per_elf, house_limit):
         if points >= target:
             return house
         house += 1
-
-day20(2)
