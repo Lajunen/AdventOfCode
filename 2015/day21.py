@@ -1,5 +1,5 @@
 
-def day20(p):
+def day21(p):
     ## creating equipment
     weapons, armors, rings = create_equipments()
 

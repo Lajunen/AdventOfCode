@@ -52,7 +52,6 @@ def part_two(sublist, current_molecule, step):
 
     if current_molecule == "e":
         ## done
-        print("Bingo! with " + str(step) + " / lowest: " + str(part_two_steps))
         if part_two_steps != 0:
             if step < part_two_steps:
                 print("new lowest steps: " + str(step))
@@ -158,7 +157,6 @@ def process_two_depts(sublist, target_molecule, current_molecule, step):
     
     ## target molecule found
     if current_molecule == target_molecule:
-        print("bingo!")
         if part_two_steps != 0 and step < part_two_steps:
             part_two_steps = step
         if part_two_steps == 0:
