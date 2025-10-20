@@ -21,6 +21,7 @@ import day20
 import day21
 import day22
 import day23
+import day24
 
 def main(d, p):
     if d == 1:
@@ -69,5 +70,7 @@ def main(d, p):
         day22.day22(p)
     if d == 23:
         day23.day23(p)
+    if d == 24:
+        day24.day24(p)
 
-main(18, 1)
+main(24, 1)

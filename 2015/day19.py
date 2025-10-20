@@ -293,5 +293,3 @@ def parse_data(data):
             target = line
 
     return subs, target
-
-day19(2)
