@@ -67,5 +67,3 @@ def parse_data(data):
         route.append(step)
     
     return route
-
-day01(2)
