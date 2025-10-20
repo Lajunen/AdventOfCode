@@ -38,7 +38,6 @@ def part_one(packages):
             if calculate_qe(modified[0]) < calculate_qe(ideal[0]):
                 ideal = deepcopy(modified)
 
-    print(str(len(configurations)))        
     return calculate_qe(ideal[0])
 
 def part_two(packages):
@@ -65,7 +64,6 @@ def part_two(packages):
             if calculate_qe(modified[0]) < calculate_qe(ideal[0]):
                 ideal = deepcopy(modified)
 
-    print(str(len(configurations)))        
     return calculate_qe(ideal[0])
 
 def calculate_qe(group):
