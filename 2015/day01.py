@@ -1,5 +1,10 @@
 import readfile
 
+## For this days tasks I used a simple loop to iterate through the
+## input string character at a time and updating floor.
+## On day 2 I checked the floor after each update to return at the
+## first time enter basement (floor being lower than 0)
+
 def day01(part):
     con = readfile.read_line(1)
 
