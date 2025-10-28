@@ -55,5 +55,3 @@ def compile_program(data):
         program.append(syntax)
     
     return program
-
-day12(2)

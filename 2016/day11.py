@@ -264,6 +264,3 @@ class item:
     
     def change_floor(self, amount):
         self.floor += amount
-    
-day11(1)
-
